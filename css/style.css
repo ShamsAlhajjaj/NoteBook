@@ -1,0 +1,45 @@
+h1{
+    font-family: cursive;
+    text-align: center;
+    background-color: #eee;
+}
+.container{
+    align-items: center;
+    margin: auto;
+    width: 70%;
+    display: grid;
+    flex-wrap: wrap;
+    gap: 10px;
+    grid-template-columns: repeat(7, 1fr);
+}
+.container2{
+    display: flex;
+    margin-top: 30px;
+}
+button{
+    font-family: cursive;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+#font-size{
+    width: 64px;
+}
+#fonts{
+    font-family: cursive;
+    max-width: 230px;
+    height: 36px;
+    border-radius: 10px;
+}
+textarea{
+    width: 80%;
+    min-height: 70vh;
+    margin: auto;
+    font-size: 20px;
+    padding: 24px;
+}
+a{
+    text-decoration: underline;
+    font-family: 'Courier New', Courier, monospace;
+}

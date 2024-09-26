@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>NoteBook</title>
+</head>
+<body>
+    <h1>Note Book</h1>
+    <div class="container">
+        <button  onclick ="bolder()">Bold</button>
+        <button id="italic" onclick="italic()">italic</button>
+        <button id="align-l" onclick="alignLeft()"><i class="fa-solid fa-align-left"></i></button>
+        <button id="align-c" onclick="alignCenter()"><i class="fa-solid fa-align-center"></i></button>
+        <button id="align-r" onclick="alignRight()"><i class="fa-solid fa-align-right"></i></button>
+        <button id="upper" onclick="toUpper()">Upper case</button>
+        <button id="lower" onclick="toLower()">lower case</button> 
+        <button id="capital" onclick="capital()">Capitalize</button>
+        <button id="clear" onclick="clearText()">Clear text</button>
+        <div>
+            
+            <button onchange="changeColor()"><input type="color" id="color" value="#ff0000"> <i class="fa-solid fa-paintbrush"></i></button>
+        </div>
+        <div>
+            <button onchange="changeBgColor()"><input type="color" id="bg-color" value="#ff0000"> <i class="fa-solid fa-fill-drip"></i></button>
+        </div>
+        <div>
+            <button onclick="changeFontSize()"><input id="font-size" type="number" placeholder="Size"> <i class="fa-solid fa-text-height"></i></button>
+        </div>        
+        <div>
+            <select name="fonts" id="fonts" onchange="changeFont()">
+                <option value="" disabled selected>changeFont</option>
+                <option value="'Courier New', Courier, monospace">'Courier New', Courier, monospace</option>
+                <option value="Arial, Helvetica, sans-serif">Arial, Helvetica, sans-serif</option>
+                <option value="'Times New Roman', Times, serif">'Times New Roman', Times, serif</option>
+            </select>
+        </div>
+        
+        <button id="print" onclick="printText()">Print Text</button>
+    </div>
+    <div class="container2">
+        <textarea name="" id="text"></textarea>
+    </div>
+
+<script src="https://kit.fontawesome.com/dcc2d26d4c.js" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
